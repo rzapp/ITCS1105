@@ -1,0 +1,77 @@
+/*
+Lab2
+ITCS1150
+Raymond Zapp
+LID00146825
+lab_style2.css
+*/
+
+body{
+  background-image: url("texture.png");
+  background-attachment: fixed;
+  height: 100%;
+}
+
+.intro-page{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 95%;
+  background-color: #EBEBEB;
+  font-family: Comic Sans MS, Cursive;
+  padding: 2%;
+  border: 2px solid #957C31;
+  margin-top: -1%;
+}
+
+.header img{
+  margin-left: -1%;
+  max-width: 100%;
+}
+
+.header, .section-main, .footer{
+  margin-left: 5%;
+}
+
+p{
+ font-size: 1.2em;
+}
+
+a{
+  text-decoration: none;
+}
+
+p a:hover{
+  background: #EEEEFF;
+  color: #7A7A7A;
+  text-decoration: underline;
+}
+
+a img{
+  box-shadow: 8px -4px 10px 1px rgb(152,152,152);
+  margin-left: 5%;
+}
+
+ul{
+  font-style: italic;
+}
+
+.intro-page .section-middle{
+  margin-left: 25%;
+}
+
+.intro-page .section-middle img{
+  border: 1px solid #000000;
+}
+
+.intro-page .section-middle img:hover{
+  box-shadow: 8px -4px 10px 1px rgb(140,198,63);
+}
+
+.footer{
+  margin-left: -6%;
+  text-align: center;
+  font-size: 0.80em;
+  font-family: Verdana, Geneva, sans-serif;
+ 
+}
