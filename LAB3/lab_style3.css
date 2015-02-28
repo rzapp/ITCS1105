@@ -1,0 +1,254 @@
+/*
+Lab3
+ITCS1150
+Raymond Zapp
+LID00146825
+lab_style3.css
+*/
+/* ***************** */
+/* print media query */
+/* ***************** */
+@media print 							
+{                                       
+h1
+{
+  color: purple;                        /* demo only purpose */
+}
+
+.intro-page .footer
+{
+  color: purple;     
+  font-size: 1.2em !important;         /* impose larger size */
+}
+
+.intro-page .overlay-ribbon .ribbon-text
+{
+  display: none;                        /* hide the Lab identifier overlay visual element */
+}
+}
+/* ***************** */
+/* ** style sheet ** */
+/* ***************** */
+body
+{
+  background: 							/* multiple background images */
+  url("html_logo.png") repeat,
+  url("css3_logo.png"),
+  url("texture.png") repeat;
+  background-attachment: fixed;
+}
+
+.intro-page
+{
+  width: 70%;							/* proportional dimensions */
+  margin-left: auto;
+  margin-right: auto;
+  height: 90%;
+  background-color: hsla(140, 56%, 82%,0.50);   		/* hue, saturation, lightness */
+  font-family: "Comic Sans MS", Cursive, sans-serif;
+  padding: 2%;
+  border: 2px solid #957C31;
+  border-radius: 25px;						/* rounded corners */
+  background-attachment: fixed;
+  margin-top: 3%;
+  margin-bottom: 2%;
+}
+
+.intro-page .header img
+{
+  margin-left: -3%;
+  max-width: 100%;
+}
+
+.intro-page .header img:hover
+{						
+  -ms-transform: scale(2,4);	 			/* vendor prefix */
+  -webkit-transform: scale(2,4); 
+  transform: scale(0.5,1.0);				/* transformation */
+  transition: 5s;
+}
+
+.intro-page .header, .intro-page .section-main, .intro-page .footer
+{
+  margin-left: 5%;
+}
+
+h1
+{
+  font-size: 1.4em;
+  font-family: LAB3_font, "Comic Sans MS", Cursive, sans-serif;			/* web font */
+}
+
+p
+{
+  font-size: 1.2em;
+}
+
+a
+{
+  text-decoration: none;
+}
+
+p a:hover
+{
+  color: #7A7A7A;
+  text-decoration: underline;
+  text-shadow: -1px -1px 4px white;				/* text shadow */
+}
+
+a img
+{
+  box-shadow: 8px -4px 10px 1px rgba(152,152,152,0.5);		/* box shadow */  /* opacity */
+  margin-left: 5%;
+}
+
+ul, ol
+{
+  font-family: LAB3_font, "Comic Sans MS", Cursive, sans-serif;
+  font-size: 1.2em;
+  margin-top: -2%;
+}
+
+ul
+{
+  font-style: italic;
+}
+
+.intro-page .section-middle
+{
+  margin-left: 25%;
+}
+
+.intro-page .section-middle img
+{
+  border: 1px solid #000000;
+}
+
+.intro-page .section-middle img:hover
+{
+  box-shadow: 8px -4px 10px 1px rgba(140,198,63,0.75);		/* box shadow */
+}
+
+.intro-page .section-middle strong:hover
+{			
+  color: green;
+  font-style: italic;
+}
+
+.intro-page .footer
+{
+  margin-left: -6%;
+  text-align: center;
+  font-size: 0.90em;
+  font-family: LAB3_font, "Comic Sans MS", Cursive, sans-serif;
+  margin-top: -2%;
+}
+
+.intro-page .overlay-ribbon
+{
+  background: RGBa(6,111,38,0.3);
+  width: 73%;
+  margin-left: auto;
+  margin-right: auto;
+  position: fixed;
+  top: 35%;
+  left: 13.5%;
+  z-index: 50;
+}
+
+.intro-page .overlay-ribbon .ribbon-text
+{
+  color: #ffffff;
+  padding: 1px;
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  font-size: 1.1em;
+}
+
+.intro-page .overlay-ribbon:hover
+{
+  display: none;
+}
+/* ***************** */
+/* ** media query ** */
+/* ***************** */
+@media all and (max-width:480px)		
+{			
+.intro-page .section-middle img
+{
+  width: 60%;				/* reset of base levels for elements' display at breakpoint */
+  height:60%;
+}
+
+h1
+{
+  font-size: 1.3em;
+  margin-top: -5%;
+}
+
+p
+{
+  font-size: 1.0em;
+}
+
+.intro-page .section-middle
+{
+  margin-left: 10%;
+}
+
+.intro-page .footer
+{
+  font-size: 1.2em;
+}
+
+.intro-page .header .banner-logo
+{				
+  display: none;				/* now hide the graphic */
+}
+}
+/* ***************** */
+/* ** media query ** */
+/* ***************** */
+@media all and (min-width:481px)
+{
+.intro-page .header .substitute-logo
+{				
+  display: none;				/* else keep substitute graphic hidden */
+}
+}
+/* ***************** */
+/* ** media query ** */
+/* ***************** */
+@media all and (min-width: 1200px)
+{     
+.intro-page .header .banner-logo
+{
+    display: block;				/* reposition on wider screens */
+    margin-left: auto;  		               
+    margin-right: auto;
+}
+.intro-page .section-main 
+{
+    margin-left: 10%;  		               
+}
+h1
+{
+    margin-left: 5%;  	
+}
+.intro-page .footer
+{
+    text-align: center;  
+}
+}
+/* *************** */
+/* ** font face ** */
+/* *************** */
+@font-face
+{							
+  font-family: LAB3_font;
+  src: url(OutLoud.ttf);		/* font-face link */
+}
+
+
+
