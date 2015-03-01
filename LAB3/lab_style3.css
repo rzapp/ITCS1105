@@ -10,7 +10,7 @@ lab_style3.css
 /* ***************** */
 @media print 							
 {                                       
-h1
+.intro-page h1
 {
   color: purple;                        /* demo only purpose */
 }
@@ -54,6 +54,47 @@ body
   margin-bottom: 2%;
 }
 
+.intro-page h1
+{
+  font-size: 1.4em;
+  font-family: LAB3_font, "Comic Sans MS", Cursive, sans-serif;			/* web font */
+}
+
+.intro-page p
+{
+  font-size: 1.2em;
+}
+
+.intro-page a
+{
+  text-decoration: none;
+}
+
+.intro-page p a:hover
+{
+  color: #7A7A7A;
+  text-decoration: underline;
+  text-shadow: -1px -1px 4px white;				/* text shadow */
+}
+
+.intro-page a img
+{
+  box-shadow: 8px -4px 10px 1px rgba(152,152,152,0.5);		/* box shadow */  /* opacity */
+  margin-left: 5%;
+}
+
+.intro-page ul, ol
+{
+  font-family: LAB3_font, "Comic Sans MS", Cursive, sans-serif;
+  font-size: 1.2em;
+  margin-top: -2%;
+}
+
+.intro-page ul
+{
+  font-style: italic;
+}
+
 .intro-page .header img
 {
   margin-left: -3%;
@@ -73,63 +114,27 @@ body
   margin-left: 5%;
 }
 
-h1
-{
-  font-size: 1.4em;
-  font-family: LAB3_font, "Comic Sans MS", Cursive, sans-serif;			/* web font */
-}
-
-p
-{
-  font-size: 1.2em;
-}
-
-a
-{
-  text-decoration: none;
-}
-
-p a:hover
-{
-  color: #7A7A7A;
-  text-decoration: underline;
-  text-shadow: -1px -1px 4px white;				/* text shadow */
-}
-
-a img
-{
-  box-shadow: 8px -4px 10px 1px rgba(152,152,152,0.5);		/* box shadow */  /* opacity */
-  margin-left: 5%;
-}
-
-ul, ol
-{
-  font-family: LAB3_font, "Comic Sans MS", Cursive, sans-serif;
-  font-size: 1.2em;
-  margin-top: -2%;
-}
-
-ul
-{
-  font-style: italic;
-}
-
-.intro-page .section-middle
+.intro-page .section-main .section-middle
 {
   margin-left: 25%;
 }
 
-.intro-page .section-middle img
+.intro-page .section-main .section-middle img
 {
   border: 1px solid #000000;
 }
 
-.intro-page .section-middle img:hover
+.intro-page .section-main .section-middle img:hover
 {
   box-shadow: 8px -4px 10px 1px rgba(140,198,63,0.75);		/* box shadow */
 }
 
-.intro-page .section-middle strong:hover
+.intro-page .section-main .section-middle strong
+{
+  color: purple;
+}
+
+.intro-page .section-main .section-middle strong:hover
 {			
   color: green;
   font-style: italic;
@@ -175,24 +180,24 @@ ul
 /* ***************** */
 @media all and (max-width:480px)		
 {			
-.intro-page .section-middle img
+.intro-page .section-main .section-middle img
 {
   width: 60%;				/* reset of base levels for elements' display at breakpoint */
   height:60%;
 }
 
-h1
+.intro-page h1
 {
   font-size: 1.3em;
   margin-top: -5%;
 }
 
-p
+.intro-page p
 {
   font-size: 1.0em;
 }
 
-.intro-page .section-middle
+.intro-page .section-main .section-middle
 {
   margin-left: 10%;
 }
@@ -232,7 +237,7 @@ p
 {
     margin-left: 10%;  		               
 }
-h1
+.intro-page h1
 {
     margin-left: 5%;  	
 }
