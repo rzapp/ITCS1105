@@ -2,3 +2,7 @@ LAB 3
 
 -CSS3 modules
 -media queries
+
+
+
+The lab includes a wide variety of modules and different properties using a range of values so to demonstrate and experiment with effects.

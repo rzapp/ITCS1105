@@ -9,10 +9,15 @@ lab_style3.css
 /* print media query */
 /* ***************** */
 @media print 							
-{                                       
+{                        
 .intro-page h1
 {
   color: purple;                        /* demo only purpose */
+}
+
+.intro-page .section-main .section-middle
+{
+  margin-bottom: -4%;					
 }
 
 .intro-page .footer
