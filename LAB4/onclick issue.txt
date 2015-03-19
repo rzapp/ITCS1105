@@ -1,3 +1,4 @@
 NB -blue artifacts on screen at onclick occur independent of js;
     it seems whitespace exists from inline css use on block level elements of html;
+	issue most visible at third "cell" in each of first two rows;
 	assignment was to leave both css & html unchanged.
