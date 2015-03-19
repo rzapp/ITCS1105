@@ -9,7 +9,7 @@
 // cursor movement away changes border color back to default color  
 // press down on mouse button changes display within the cell/square
 //
-window.onload = function ()                                          // wait till after html loaded
+window.onload = function ()                                          // wait till after html loaded; DOM in place
 {
 	var lab4Color = "green";                                         // assign color value for use at event
 	var theBoard = document.getElementsByClassName("piece-empty");   // capture the collection of elements with matching class
