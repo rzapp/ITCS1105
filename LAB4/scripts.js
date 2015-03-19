@@ -5,48 +5,44 @@
    00146825 
    1 April 2015 
 */
-// cursor hover changes the border color of the individual cell/square 
-// cursor movement away changes border color back to default color  
-// press down on mouse button changes display within the cell/square
-//
-window.onload = function ()                                          // wait till after html loaded; DOM in place
+
+window.onload = function ()                                          
 {
-	var lab4Color = "green";                                         // assign color value for use at event
-	var theBoard = document.getElementsByClassName("piece-empty");   // capture the collection of elements with matching class
+	var lab4Color = "green";                                         
+	var theBoard = document.getElementsByClassName("piece-empty");   
 		
-	for (squaresCount = 0; squaresCount < (theBoard.length); squaresCount++)    // loop till counter reaches total of elements
+	for (squaresCount = 0; squaresCount < (theBoard.length); squaresCount++)    
 	{
 		var eachSquare = theBoard[squaresCount];
 		
-		eachSquare.onmouseover = function ()                    // bind the one same Event function to each different element
+		eachSquare.onmouseover = function ()                    
 		{
-			this.style.borderColor = lab4Color;				    // assign the property value to the targeted piece
+			this.style.borderColor = lab4Color;				    
 		}
 		
 		eachSquare.onmouseout = function ()
 		{
-			this.style.borderColor = "";                        // clear the assigned style; revealing the original style
+			this.style.borderColor = "";                        
 		}
 		
-		eachSquare.onmousedown = function ()                    // bind this same Event function to each element
+		eachSquare.onmousedown = function ()                    
 		{
-			var currentClass = this.className;                  // capture the currently in-place class of the targeted piece
+			var currentClass = this.className;                  
 			
-			if (currentClass == "piece-empty")					// compare the class
+			if (currentClass == "piece-empty")					
 			{
-				this.className = "piece-x";                     // swap the class
+				this.className = "piece-x";                     
 			}
 			
-			else if (currentClass == "piece-x")                 // continue to toggle through the classes
+			else if (currentClass == "piece-x")                 
 			{
 				this.className = "piece-o";
 			}
 			
-			else                                                // because otherwise className is piece-o
-			{                                                   // or, at the very least, options exhausted; return to default
+			else                                                
+			{                                                   
 				this.className = "piece-empty";
 			}
 		}
 	}
 };
-/* -end- */
