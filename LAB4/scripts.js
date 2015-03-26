@@ -10,7 +10,7 @@ window.onload = function ()
 {      
 	var theBoard = document.getElementsByClassName("piece-empty");   
 		
-	for (i = 0; i < (theBoard.length); i++)    
+	for (i = 0; i < theBoard.length; i++)    
 	{
 		var eachSquare = theBoard[i];
 		
