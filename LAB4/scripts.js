@@ -10,9 +10,9 @@ window.onload = function ()
 {      
 	var theBoard = document.getElementsByClassName("piece-empty");   
 		
-	for (squaresCount = 0; squaresCount < (theBoard.length); squaresCount++)    
+	for (i = 0; i < (theBoard.length); i++)    
 	{
-		var eachSquare = theBoard[squaresCount];
+		var eachSquare = theBoard[i];
 		
 		eachSquare.onmouseover = function ()                    
 		{
