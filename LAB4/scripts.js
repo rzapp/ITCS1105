@@ -7,8 +7,7 @@
 */
 
 window.onload = function ()                                          
-{
-	var lab4Color = "green";                                         
+{      
 	var theBoard = document.getElementsByClassName("piece-empty");   
 		
 	for (squaresCount = 0; squaresCount < (theBoard.length); squaresCount++)    
@@ -17,7 +16,7 @@ window.onload = function ()
 		
 		eachSquare.onmouseover = function ()                    
 		{
-			this.style.borderColor = lab4Color;				    
+			this.style.borderColor = "green";				    
 		}
 		
 		eachSquare.onmouseout = function ()
@@ -26,15 +25,13 @@ window.onload = function ()
 		}
 		
 		eachSquare.onmousedown = function ()                    
-		{
-			var currentClass = this.className;                  
-			
-			if (currentClass == "piece-empty")					
+		{               
+			if (this.className == "piece-empty")					
 			{
 				this.className = "piece-x";                     
 			}
 			
-			else if (currentClass == "piece-x")                 
+			else if (this.className == "piece-x")                 
 			{
 				this.className = "piece-o";
 			}
