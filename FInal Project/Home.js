@@ -1,9 +1,20 @@
-// JScript source code
-
-function Create() {
-    return {
+/*
+ITCS1105
+Final Project
+home.js
+Raymond Zapp
+LID 00146825
+May 2015
+*/
+function Create() 
+{
+    return 
+	{
         url: "/home/CreateAccount",
-        success: function (response) { CreateResponse(JSON.parse(response)); },
+        success: function (response) 
+		{ 
+		  CreateResponse(JSON.parse(response)); 
+		},
         data: 
         {
           "Username": $(".new-username-text").val(),
@@ -13,11 +24,15 @@ function Create() {
         }
     }
 }
-
-function Login() {
-    return {
+function Login() 
+{
+    return 
+	{
         url: "/home/Login",
-        success: function (response) { LoginResponse(JSON.parse(response)); }, 
+        success: function (response) 
+		{ 
+		LoginResponse(JSON.parse(response));
+		}, 
         data:
         {
           "Username": $(".username-text").val(),
@@ -25,90 +40,96 @@ function Login() {
         }
     }
 }
-
 function Account()
 {
-    return {
+    return 
+	{
         url: "/home/GetAccountInformation",
-        success: function (response) { AccountResponse(JSON.parse(response)); },
+        success: function (response)
+		{ 
+		AccountResponse(JSON.parse(response));
+		},
         data:
         {
-            "Username": $(".username-text").val()
+          "Username": $(".username-text").val()
         }
     }
 }
-
-
-function CreateResponse(response) {
-    if (response.Message == "Error") {
-
-        if (response.Username == "Invalid") {
+function CreateResponse(response) 
+{
+    if (response.Message == "Error") 
+	{
+        if (response.Username == "Invalid") 
+		{
             alert("Username must be at least 6 characters");
         }
-        else if (response.Username == "Exists") {
+        else if (response.Username == "Exists") 
+		{
             alert("Username is already taken");
         }
-        else if (response.Password == "Invalid") {
+        else if (response.Password == "Invalid") 
+		{
             alert("Password must be at least 6 characters");
         }
-        else if (response.EmailAdd == "Invalid") {
+        else if (response.EmailAdd == "Invalid") 
+		{
             alert("Email must contain @");
         }
-        else if (response.EmailCon == "Invalid") {
+        else if (response.EmailCon == "Invalid") 
+		{
             alert("Please enter email address");
         }
-        else if (response.EmailCon == "Mismatch") {
+        else if (response.EmailCon == "Mismatch") 
+		{
             alert("Email address entry does not match");
         }
     }
-    else if (response.Message == "Success") {
+    else if (response.Message == "Success") 
+	{
         alert("Good!");
         $(".account-output").html($(".new-username-text").val());     // just for TESTING
         slide();
     }
 }
-
-
 function LoginResponse(response) 
 {
-    if (response.Message == "Error") {
-
-        if (response.Username == "Invalid") {
+    if (response.Message == "Error") 
+	{
+        if (response.Username == "Invalid") 
+		{
             alert($(".username-text").val() + " is NOT existing user account name");
         }
-        else if (response.Password == "Wrong") {
+        else if (response.Password == "Wrong") 
+		{
             alert("Password does not match credentials for " + Username);
         }
     }
-    else if (response.Message == "Success") {
+    else if (response.Message == "Success") 
+	{
         alert("Welcome back!");
         GetAccountInfo();
         slide();
     }
 }
-
-function AccountResponse(response) {
-    var output = response.Payload;
-    var newObj = output.account;
-    var nextObj = JSON.parse(response.Payload);
-    $(".account-output").html(nextObj.account.username);  // ************* HERE
-    $(".email-text").val(nextObj.account.password);
+function AccountResponse(response) 
+{
+    var payload = JSON.parse(response.Payload);
+    $(".account-output").html(payload.account.username);  
+    $(".email-text").val(payload.account.password);
 }
-
-function GetAccountInfo() {
+function GetAccountInfo() 
+{
     var serviceLocation = "/home/GetAccountInformation";
     $.ajax(Account());
 }
-
-
-function slide() {
+function slide() 
+{
     //$(".SLIDE").toggle("slide", {direction: "left"}, 2400);  /* in and out*/
     $(".slide1").toggle("slide", { direction: "right" }, 2400); /* wrapper for login session is slide1*/
     $(".slide2").toggle("slide", { direction: "left" }, 2400); /* wrapper for account session is slide2*/
 }
-
-$(document).ready(function () {
-
+$(document).ready(function () 
+{
     $(".create-button").click(function () 
     {
         $.ajax(Create());
@@ -118,5 +139,4 @@ $(document).ready(function () {
     {
         $.ajax(Login());
     });
-
 });
