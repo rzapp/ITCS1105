@@ -1,0 +1,208 @@
+﻿/* 
+ITCS 1105
+Final Project
+Home.css
+Raymond Zapp
+00146825
+6 May 2015
+*/
+.accountPage
+{
+    width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.accountPage .header
+{
+    font-family: Cambria;
+    font-size: 16px;
+}
+.accountPage .header p
+{
+    font-family: Calibri;
+    font-size: 12px; 
+    font-style: italic; 
+}
+.user-content hr
+{
+    width: 90%;
+    border-color: rgb(0, 204, 255);
+}
+.footer
+{
+    font-size: 12px;
+}
+.accountPage .user-content  
+{
+    font-family: Calibri;
+    font-size: 12px;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 5px;
+}
+.accountPage .user-content .login-entry
+{
+    display: table;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+.accountPage .user-content .login-entry .row .text
+{
+    display: inline-block;
+    width: 210px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.accountPage .user-content .login-entry .row .text-phone
+{
+    display: none;
+}
+.accountPage .user-content .login-entry .row .spacer 
+{
+   display: inline-block;
+   height: 15px;
+   width: 210px;
+   margin-right: 10px;
+}
+.accountPage .user-content .login-entry .row .value 
+{
+    display: inline-block;
+    width: 35px; 
+    margin-right: 10px;     
+}
+.accountPage .user-content .login-entry .row .input 
+{
+    display: inline-block;
+    margin-left: 15px;
+}
+.accountPage .user-content .login-entry .row .input .login-button
+{
+    margin-top: 10px;
+    margin-left: 10px;    
+}
+.accountPage .user-content .account-create
+{
+    display: table;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+.accountPage .user-content .account-create .row .text
+{
+    display: inline-block;
+    width: 160px;           
+    margin-top: 10px;
+    margin-right: 0px;     
+    margin-bottom: 10px;
+}
+.accountPage .user-content .account-create .row .text-phone
+{
+    display: none;
+}
+.accountPage .user-content .account-create .row .spacer
+{
+   display: inline-block;
+   height: 15px;
+   width: 160px;    
+}
+.accountPage .user-content .account-create .row .value
+{
+    display: inline-block;
+    width: 105px; 
+    margin-right: 5px;         
+}
+.accountPage .user-content .account-create .row .input
+{
+    display: inline-block;
+    margin-left: 5px;
+}
+.accountPage .user-content .account-create .row .error-msg 
+{
+    display: inline-block;
+    margin-left: 5px;
+}
+.accountPage .user-content .account-create .row .error-msg .error-message-create
+{
+    height: 25px;
+    margin-left: 5px;
+}
+.accountPage .user-content .account-create .row .input .create-button
+{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.accountPage hr
+{
+    width: 90%;
+    border-color: rgb(0, 204, 255);
+}
+.accountPage .user-content .account-display
+{
+	display: table;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+.accountPage .user-content .account-display .row .name
+{
+	display: inline-block;
+	width: 100px;
+	margin-bottom: 5px;
+}
+.accountPage .user-content .account-display .row .name .account-name
+{
+    font-weight: bold;
+}
+.accountPage .user-content .account-display .row .value
+{
+	display: inline-block;
+}
+.accountPage .user-content .account-display .row .value .account-output  
+{
+    font-style: italic;
+}
+.accountPage .user-content .account-display .row .update
+{
+	display: inline-block;
+	margin-left: 15px;
+}
+.accountPage .user-content .element-entry
+{
+	display: table;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+.accountPage .user-content .element-entry .row .eName
+{
+	display: inline-block;
+	width: 100px;
+	margin-left: 5px;
+	margin-bottom: 5px;
+}
+.accountPage .user-content .element-entry .row .eValue
+{
+	display: inline-block;
+	margin-left: 5px;
+}
+.accountPage .user-content .element-entry .error-message-element
+{
+    width: 205px;
+    height: 25px;
+    margin-left: 5px;
+}
+.accountPage .user-content .element-entry .row .eValue .element-input-button
+{
+    margin-left:  25px;  
+}
+.accountPage .footer
+{
+    font-size: 12px;  
+}
+/* end */

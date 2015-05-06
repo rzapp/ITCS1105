@@ -1,0 +1,43 @@
+﻿/* 
+ITCS 1105
+Final Project
+button.css
+Raymond Zapp
+00146825
+6 May 2015
+*/
+.login-button, .create-button, .email-input-button, .element-input-button, .element-add-button, .element-update-button
+{
+  width: 145px;
+  height: 20px;
+  border: solid #B6E6E6;
+  border-width: 1px;
+  border-style: outset;
+  color: #CAFFFF;
+  background-color: rgba(102,153,255,0.75);
+  text-align: center;
+  line-height: 175%; 
+  font-family: Verdana;
+  font-size: .80em;
+  font-weight: bold;
+  padding: 0 0 0 0;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  box-shadow:  5px 6px 8px rgba(89, 107, 161, 0.5);
+}
+.email-input-button, .element-input-button, .element-update-button
+{
+  width: 100px;
+}
+/*
+Media Query                        ******************* MEDIA QUERY *************************
+*/
+@media all and (max-width:420px)
+{
+.login-button, .create-button, .email-input-button, .element-input-button , .element-add-button, .element-update-button
+{
+  width: 175px;
+  line-height: 155%;
+}  
+}

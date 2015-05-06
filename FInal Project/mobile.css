@@ -1,0 +1,139 @@
+﻿/* 
+ITCS 1105
+Final Project
+mobile.css
+Raymond Zapp
+00146825
+6 May 2015
+*/
+.accountPage .user-content .account-display .row .user-text, .element-entry .row .user-text
+{
+	width: 170px;
+}
+.accountPage .user-content .login-entry .row .user-text, .account-create  .row .user-text
+{
+	width: 170px;
+}
+.accountPage .user-content .account-display, .name, .value, .update, .row
+{
+	margin-top: 10px;
+}
+.accountPage .user-content .account-display, .eName, .eValue, .row
+{
+	margin-top: 10px;
+}
+.account-display, .element-entry, .account-create, .login-entry
+{
+  margin-left: 45px;
+}
+.text-phone
+{
+	display: block;
+}
+.accountPage .user-content .login-entry .row .text
+{
+    display: none;
+}
+.accountPage .user-content .account-create .row .text
+{
+    display: none;
+}
+.accountPage .user-content .login-entry .row .text-phone
+{
+    font-family: Cambria;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.accountPage .user-content .account-create .row .text-phone
+{
+    font-family: Cambria;
+    font-size: 18px;
+    margin-bottom: 10px;
+	margin-left: -45px;
+}
+.accountPage
+{
+    width: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.accountPage .header
+{
+    font-family: Cambria;
+    font-size: 18px;
+}
+.accountPage .header p
+{
+    font-family: Calibri;
+    font-size: 13px; 
+    font-style: italic; 
+}
+.accountPage .header h1
+{
+    font-size: 97%;
+    text-align: center; 
+}
+.accountPage .user-content 
+{
+    font-family: Calibri;
+    font-size: 13px;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+.accountPage .user-content hr
+{
+    width: 90%;
+    border-color: rgb(0, 204, 255);
+    margin: 15px;
+}
+.accountPage .user-content .login-entry  
+{
+	display: inline;
+}
+
+.accountPage .user-content .login-entry .login .input 
+{
+    margin-left: 15px;
+    display: inline-block;
+}
+.accountPage .user-content .login-entry .row .value
+{
+    display: inline-block;
+    margin-right: 5px;  
+    width: 85px;  
+	margin-left: 5px;	
+}
+.accountPage .user-content .login-entry .row .input
+{
+	 display: inline-block;
+}
+.accountPage .user-content .account-create .row .value
+{
+    display: inline-block;
+    margin-right: 5px;  
+    width: 85px;  
+	margin-left: -45px;	
+}
+.accountPage .user-content .account-create .row .input
+{
+	 display: inline-block;
+}
+.accountPage .user-content .account-create  .row  .error-message-create
+{
+	height: 20px;
+	width: 205px;
+	margin-left: -45px;
+	margin-bottom: 5px;
+}
+.accountPage  .account-display .row .name .account-name
+{
+   font-weight: bold;
+   font-size: 16px;
+}
+.footer
+{
+    font-size: 12px;
+	text-align: center;
+}
